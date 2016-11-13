@@ -5,6 +5,7 @@
 	<title>Angular-Laravel Authentication</title>
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 	<!-- <link rel="stylesheet" href=".\node_modules\bootstrap\dist\css\bootstrap.css"> -->
+	<base href="/">
 </head>
 
 <body ng-app="authApp">

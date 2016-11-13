@@ -3,7 +3,7 @@
 
 	angular
 		.module('authApp', ['ui.router', 'satellizer'])
-		.config(function($stateProvider, $urlRouterProvider, $authProvider, $httpProvider, $provide){
+		.config(function($stateProvider, $urlRouterProvider, $authProvider, $httpProvider, $provide, $locationProvider){
 
 			function redirectWhenLoggedOut($q, $injector) {
 				return {
@@ -69,5 +69,8 @@
 					templateUrl: '../views/userView.html',
 					controller: 'userController as user'
 				});
+
+			// use the HTML5 History API
+        	$locationProvider.html5Mode(true);
 		});
 })();
